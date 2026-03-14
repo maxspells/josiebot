@@ -146,7 +146,7 @@ this bot was made for a **homelab server setup** using docker containers like:
 * valheim
 * corekeeper
 * hytale
-* 7dtd
+* 7 days to die
 
 if your containers are named something else, change it in the code.
 
