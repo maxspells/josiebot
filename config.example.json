@@ -1,5 +1,6 @@
 {
   "token": "YOUR_DISCORD_BOT_TOKEN_HERE",
   "serverIP": "YOUR_SERVER_IP_HERE",
-  "adminUserId": "YOUR_DISCORD_USER_ID_HERE"
+  "adminUserId": "YOUR_DISCORD_USER_ID_HERE",
+  "moodChangeInterval": 3600000
 }

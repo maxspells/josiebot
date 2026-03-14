@@ -21,6 +21,18 @@ const token = config.token;
 
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
+    
+    // Set initial mood
+    const initialMood = responses.moods[Math.floor(Math.random() * responses.moods.length)];
+    client.user.setActivity(initialMood);
+    
+    // Mood change interval in milliseconds (default: 1 hour) in config.json
+    // Change mood periodically
+    setInterval(() => {
+        const randomMood = responses.moods[Math.floor(Math.random() * responses.moods.length)];
+        client.user.setActivity(randomMood);
+        console.log(`Mood changed to: ${randomMood}`);
+    }, config.moodChangeInterval);
 });
 
 client.on('messageCreate', message => {
@@ -276,7 +288,6 @@ client.on('messageCreate', message => {
 - !babe: 💅💅💅💅
 - !compliment: get a compliment from me
 - !roast <user>: roast someone
-- !mood: check my mood
 - !advice: get some sassy advice
 - !help: see this message again`);
     }
@@ -295,12 +306,6 @@ client.on('messageCreate', message => {
             return;
         }
         const random = responses.roasts[Math.floor(Math.random() * responses.roasts.length)].replace('${target}', target);
-        message.channel.send(random);
-    }
-
-    if (message.content === '!mood') {
-        console.log(`!mood command triggered by ${message.author.username}`);
-        const random = responses.moods[Math.floor(Math.random() * responses.moods.length)];
         message.channel.send(random);
     }
 
