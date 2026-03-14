@@ -1,3 +1,3 @@
 #!/bin/bash
 pkill -f "node index.js"
-echo "Bot stopped."
+echo "JosieBot stopped."
