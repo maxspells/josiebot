@@ -152,10 +152,4 @@ if your containers are named something else, change it in the code.
 
 ---
 
-# Final thoughts
-
-this bot is chaotic, slightly mean, and surprisingly useful.
-
-basically like a **very judgmental server admin assistant**.
-
 enjoy 💅
