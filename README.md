@@ -2,7 +2,7 @@
 
 JosieBot is a **sassy Discord bot** that runs my homelab game servers while judging everyone in chat.
 
-She can check server status, manage a Minecraft whitelist, run Docker commands, and generally act like she’s **way too busy for your nonsense**.
+She can check server status, run Docker commands, and generally act like she’s **way too busy for your nonsense**.
 
 This is a **small personal project**.
 
